@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**camila Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**Cᴏʙʀᴀ Mᴜsɪᴄ Assɪsᴛᴀɴᴛ Jᴏɪɴᴇᴅ Tʜɪs Gʀᴏᴜᴘ Fᴏʀ Pʟᴀʏ ᴍᴜsɪᴄ 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -129,7 +129,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, @camilaowner assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, @Xd_Lif Assɪsᴛᴀɴᴛ Usᴇʀʙᴏᴛ Is Nᴏᴛ Iɴ ᴛʜɪs  Cʜᴀᴛ, Asᴋ Aᴅᴍɪɴ Tᴏ Sᴇɴᴅ /play Cᴏᴍᴍᴀɴᴅ Fᴏʀ Fɪʀsᴛ Tɪᴍᴇ Tᴏ Aᴅᴅ it.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
