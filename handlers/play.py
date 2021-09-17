@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Cᴏʙʀᴀ Mᴜsɪᴄ Assɪsᴛᴀɴᴛ Jᴏɪɴᴇᴅ Tʜɪs Gʀᴏᴜᴘ Fᴏʀ Pʟᴀʏ ᴍᴜsɪᴄ 🎵**")
+                        message.chat.id, "**Aliza Mᴜsɪᴄ Assɪsᴛᴀɴᴛ Jᴏɪɴᴇᴅ Tʜɪs Gʀᴏᴜᴘ Fᴏʀ Pʟᴀʏ ᴍᴜsɪᴄ 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/LXW_UPDATE")
+                        url="https://t.me/MISTY_SUPORT")
                    
                 ]
             ]
@@ -223,7 +223,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit("🔎 **...**")
         query = message.text.split(None, 1)[1]
         # print(query)
         await lel.edit("🎵 **Processing sounds...**")
